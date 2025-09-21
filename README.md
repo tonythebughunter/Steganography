@@ -9,17 +9,18 @@ Useful for CTFs, forensic investigations, and general security practice.
 
 1. **View image**
    
-   eog image.png
+      eog image.png
 
 3. View text from image
 
-cat image.png
-strings image.png
+      cat image.png
+   
+      strings image.png
 
 
 3. View metadata
 
-exiftool image.png
+      exiftool image.png
 
 
 
@@ -31,7 +32,7 @@ You can decode them as follows:
 
 Python 2
 
-python2 -c 'print hex(int("01000101", 2))[2:].decode("hex")'
+      python2 -c 'print hex(int("01000101", 2))[2:].decode("hex")'
 
 > [2:] removes the 0x from the hex string.
 
@@ -39,18 +40,15 @@ python2 -c 'print hex(int("01000101", 2))[2:].decode("hex")'
 
 Python 3
 
-import binascii
-
-bin_str = "01000101"
-hex_str = hex(int(bin_str, 2))[2:] # binary → hex
-
-# Decode hex to ASCII using binascii
-decoded = binascii.unhexlify(hex_str)
-print(decoded.decode())
+      import binascii
+      bin_str = "01000101"
+      hex_str = hex(int(bin_str, 2))[2:] # binary → hex
+      decoded = binascii.unhexlify(hex_str)
+      print(decoded.decode())
 
 One-liner (Python 3)
 
-import binascii; print(binascii.unhexlify(hex(int("01000101",2))[2:]).decode())
+      import binascii; print(binascii.unhexlify(hex(int("01000101",2))[2:]).decode())
 
 
 🎨 Image Stego Tools
@@ -63,25 +61,23 @@ View image in different color planes.
 5. zsteg
 Detect hidden data in PNG and BMP.
 
-
-
-zsteg file.png
-zsteg -a file.png
+      zsteg file.png
+      zsteg -a file.png
 
 
 
 🌐 Online & CLI Tools
 
 6. Decode text from image online
-https://stylesuxx.github.io/steganography
+7. 
+      https://stylesuxx.github.io/steganography
 
 
-7. Steghide
-Extract hidden data using a provided password.
+8. Steghide
+   
+      Extract hidden data using a provided password.
 
-
-
-steghide extract -sf stegfile.png
+      steghide extract -sf stegfile.png
 
 
 
@@ -89,9 +85,7 @@ steghide extract -sf stegfile.png
 
 8. binwalk → Analyzes files (firmware, PNG, JPEG, PDF) and detects embedded files, code, or data inside.
 
-
-
-binwalk file.jpg
+      binwalk file.jpg
 
 Example output:
 
@@ -99,13 +93,11 @@ Hey, there’s a ZIP file starting at offset 0x1234
 
 Extract everything automatically:
 
-binwalk --dd='.*' file.jpg
+      binwalk --dd='.*' file.jpg
 
 9. foremost → Extracts all hidden/embedded files.
 
-
-
-foremost file.jpg
+      foremost file.jpg
 
 
 📚 Summary
