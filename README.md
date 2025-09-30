@@ -95,11 +95,19 @@ Extract everything automatically:
 
       binwalk --dd='.*' file.jpg
 
-9. foremost → Extracts all hidden/embedded files.
+9. foremost → Extracts all hidden/embedded/deleted files.
 
       foremost file.jpg
 
+10. Autopsy - advanced disk scanning tool (also scans deleted files) eg .dd, .img, etc. Has advanced feature like keyword search that performs deepscanning.
 
+       sudo autopsy
+
+12. zbarimg _ tool for decoding qrcode
+
+       zbarimg output.png
+
+    
 📚 Summary
 
 Use exiftool, strings, and binwalk for quick inspection.
