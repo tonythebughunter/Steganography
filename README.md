@@ -107,6 +107,7 @@ Extract everything automatically:
 
        zbarimg output.png
 
+13. Sonic Visualizer. audio analysis and modulation tool
     
 📚 Summary
 
