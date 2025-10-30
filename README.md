@@ -81,7 +81,7 @@ Detect hidden data in PNG and BMP.
 
 9. Stegseek : Bruteforce steghide password and extract the hidden text
 
-       steghide steg.jpg
+       stegseek steg.jpg
 
       Output: [i] Found passphrase: "87654321"  [i] Original filename: "ste.txt".  [i] Extracting to "ste.jpg.out".
 
