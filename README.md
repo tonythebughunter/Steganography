@@ -51,6 +51,12 @@ One-liner (Python 3)
       import binascii; print(binascii.unhexlify(hex(int("01000101",2))[2:]).decode())
 
 
+Add few bytes to the begining of a broken image/file :
+
+      printf '\xFF\xD8' | cat - broken.jpg > fixed.jpg
+
+
+
 🎨 Image Stego Tools
 
 4. Stegsolve (Java GUI tool)
