@@ -61,10 +61,11 @@ Add few bytes to the begining of a broken image/file :
 
 4. Stegsolve (Java GUI tool)
 View image in different color planes.
+Unihide redacted/colored text in an image
 👉 Useful for LSB and palette-based stego.
 
 
-5. zsteg
+6. zsteg
 Detect hidden data in PNG and BMP.
 
       zsteg file.png
