@@ -82,9 +82,9 @@ Detect hidden data in PNG and BMP.
 
 8. Steghide
    
-      Hide or Unhide hidden data using a password.
+      Hide or Unhide hidden data in images (jpg) using a password.
 
-      steghide extract -sf stegfile.png
+      steghide extract -sf stegfile.jpg
 
 9. Stegseek : Bruteforce steghide password and extract the hidden text
 
