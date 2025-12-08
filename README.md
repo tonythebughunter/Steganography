@@ -119,7 +119,8 @@ Extract everything automatically:
 
        zbarimg output.png
 
-13. Sonic Visualizer. audio analysis and modulation tool
+13. Sonic Visualizer. audio analysis and modulation tool eg for .wav.
+    -check for the audio file spectrum it might have the flag. steps: Pane->Add Spectogram
     
 📚 Summary
 
